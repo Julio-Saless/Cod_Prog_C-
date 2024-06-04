@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 #include <locale>
 
 using namespace std;
@@ -9,7 +8,7 @@ int main() {
 
 int a, b, c, delta, raiz_real, raiz_1, raiz_2;
 	
-	cout<<"Descobrindo a raiz da equação de segundo grau (ax² + bx + c) \n";
+	cout<<"Descobrindo a raiz da equaÃ§Ã£o de segundo grau (axÂ² + bx + c) \n";
 	cout<<endl;
 	cout<<"Informe o valor de 'a':";
 	cin>>a;
@@ -21,28 +20,28 @@ int a, b, c, delta, raiz_real, raiz_1, raiz_2;
 
 
 	if(a==0){
-		cout<<"Está não e uma equação de segundo grau, Fim do programa!!!";
+		cout<<"EstÃ¡ nÃ£o e uma equaÃ§Ã£o de segundo grau, Fim do programa!!!";
 		
 	}
-	else if(a!=0){
+	else{
 			
 	delta=(b*b)-4*a*c;
 			
 			if(delta>0){
-				cout<<"Está equação não possui raízes reais, Fim da execução!!! ";
+				cout<<"EstÃ¡ equaÃ§Ã£o nÃ£o possui raÃ­zes reais, Fim da execuÃ§Ã£o!!! ";
 				cout<<endl;
 			
 			}else if(delta==0){
 			
 				raiz_real=-b / (2 * a);
-				cout<<"Está equação possui apenas uma raiz real, sendo ela: "<< raiz_real <<endl;
+				cout<<"EstÃ¡ equaÃ§Ã£o possui apenas uma raiz real, sendo ela: "<< raiz_real <<endl;
 			
 			
 			}else{
 				
 				raiz_1= (-b + (delta*delta)) / (2 * a);
         		raiz_2= (-b - (delta*delta)) / (2 * a);	
-				cout<<"Está equação possui duas raízes reais, sendo elas: "<<raiz_1 <<" e "<<raiz_2 <<endl;
+				cout<<"EstÃ¡ equaÃ§Ã£o possui duas raÃ­zes reais, sendo elas: "<<raiz_1 <<" e "<<raiz_2 <<endl;
 			}
 	}
 	
